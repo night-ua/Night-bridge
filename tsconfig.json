@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "millennium": [
+        "./.millennium/lsp/ts"
+      ]
+    },
+    "typeRoots": [
+      "./.millennium/types",
+      "./node_modules/@types"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "darkdevil-steam-bridge",
+  "version": "2.0.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate-theme.cjs && node scripts/generate-assets.cjs --prepare-output && starlight pack --release",
+    "types": "starlight lsp",
+    "test": "node scripts/generate-theme.cjs && node scripts/generate-assets.cjs && node --test tests/*.test.cjs",
+    "prepare": "starlight lsp"
+  },
+  "devDependencies": {
+    "@steambrew/starlight": "1.1.6",
+    "jsdom": "27.0.1"
+  }
+}

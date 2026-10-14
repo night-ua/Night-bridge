@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "../../.millennium/types",
+      "../../node_modules/@types"
+    ],
+    "paths": {
+      "millennium": [
+        "../../.millennium/lsp/webkit-ts"
+      ]
+    }
+  },
+  "extends": "../../tsconfig.json"
+}

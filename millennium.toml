@@ -1,0 +1,19 @@
+[plugin]
+id = "space.darkdevil.steam-bridge"
+name = "Nght-Bridge"
+version = "2.0.2"
+author = "DarkDevil"
+description = "Review DarkDevil packages in Night Injection from Steam store pages."
+
+[backend]
+entry = "plugin/backend/main.lua"
+sources = ["plugin/backend/main.lua", "plugin/backend/windows-ipc.lua"]
+
+[frontend]
+entry = "plugin/frontend/index.ts"
+
+[webkit]
+entry = "plugin/webview/preload.ts"
+
+[compiler]
+output_path = "../artifacts/space.darkdevil.steam-bridge.star"
